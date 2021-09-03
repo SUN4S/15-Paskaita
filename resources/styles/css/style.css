@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  height: 100vh;
+  margin: 2rem 0;
+}
+
+body {
+  background-color: black;
+  color: #FFF;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.tabButton {
+  margin: 1rem;
+}
+
+.tabButton .tablinks {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #000;
+  color: white;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.tabButton .tablinks:hover {
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
+}
+
+.tabButton .tablinks.active {
+  background-color: #FFF;
+  color: #000;
+}
+
+.tabContent {
+  display: flex;
+  justify-content: center;
+}
+
+.tabContent .tabcontent {
+  width: 50%;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.tabContent img {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .tabContent .tabcontent {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

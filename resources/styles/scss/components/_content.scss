@@ -1,0 +1,29 @@
+.tabContent {
+  display: flex;
+  justify-content: center;
+
+
+  .tabcontent {
+    width: 50%;
+    animation: fadeEffect 1s;
+
+    @keyframes fadeEffect {
+      from{opacity: 0;}
+      to{opacity: 1;}
+    }
+  }
+
+  img {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .tabContent {
+    
+    .tabcontent {
+      width: 90%;
+    }
+  }
+}
